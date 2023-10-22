@@ -36,7 +36,7 @@ module.exports = {
                 },
                 accent: {
                     DEFAULT: "var(--accent)",
-                    foreground: "var(--text)",
+                    foreground: "var(--accent-foreground)",
                 },
             },
             keyframes: {

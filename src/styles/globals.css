@@ -3,97 +3,96 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --background: #F5F5F5;
+    :root {
+        --background: #F5F5F5;
 
-    --text: #111111;
+        --text: #111111;
 
-    --primary: #5252FF;
-    --primary-foreground: #FFFFFF;
+        --primary: #5252FF;
+        --primary-foreground: #FFFFFF;
 
-    --secondary: #1AFFC6;
+        --secondary: #1AFFC6;
 
-    --accent: #38C0FF;
+        --accent: #004376;
+        --accent-foreground: #FFFFFF;
 
-    --destructive: #D31C1C;
-    --destructive-foreground: #FFFFFF;
+        --destructive: #D31C1C;
+        --destructive-foreground: #FFFFFF;
 
-    --muted: #DFDFDF;
-    --muted-foreground: #111111;
-  }
+        --muted: #DFDFDF;
+        --muted-foreground: #6e6e6e;
+    }
 
-  .dark {
-    --background: #111111;
+    .dark {
+        --background: #111111;
 
-    --text: #F5F5F5;
+        --text: #F5F5F5;
 
-    --primary: #5252FF;
-    --primary-foreground: #FFFFFF;
+        --primary: #5252FF;
+        --primary-foreground: #FFFFFF;
 
-    --secondary: #1AFFC6;
+        --secondary: #1AFFC6;
 
-    --accent: #38C0FF;
+        --accent: #004376;
+        --accent-foreground: #FFFFFF;
 
-    --destructive: #D31C1C;
-    --destructive-foreground: #FFFFFF;
+        --destructive: #D31C1C;
+        --destructive-foreground: #FFFFFF;
 
-    --muted: #DFDFDF;
-    --muted-foreground: #111111;
-  }
+        --muted: #DFDFDF;
+        --muted-foreground: #111111;
+    }
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+    body {
+        @apply bg-background text-foreground;
+    }
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  position: relative;
-  font-weight: normal;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    font-weight: normal;
 }
 
 body {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Roboto, Ubuntu, 'Helvetica Neue', sans-serif;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Roboto, Ubuntu, 'Helvetica Neue', sans-serif;
 
-  background: var(--background);
-  color: var(--text);
-  overflow-x: hidden;
-  line-height: 1.6;
-  font-size: 1rem;
+    background: var(--background);
+    color: var(--text);
+    overflow-x: hidden;
+    line-height: 1.6;
+    font-size: 1rem;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
 
 * {
-  scrollbar-width: thin;
-  scrollbar-color: var(--primary) var(--background);
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) var(--background);
 }
 
 *::-webkit-scrollbar {
-  width: 12px;
+    width: 12px;
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--background);
+    background: var(--background);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--primary);
-  border-radius: 20px;
-  border: 2px solid var(--background);
+    background-color: var(--primary);
+    border-radius: 20px;
+    border: 2px solid var(--background);
 }

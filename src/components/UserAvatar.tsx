@@ -6,7 +6,7 @@ export default function UserAvatar() {
 
     return (
         <Avatar>
-            <AvatarImage src={session?.user?.image || ""}/>
+            <AvatarImage src={session?.user?.image ?? ""}/>
             <AvatarFallback>
                 {session?.user?.name?.charAt(0)}
                 {session?.user?.name?.charAt(1)}

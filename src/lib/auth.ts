@@ -1,4 +1,4 @@
-import { DrizzleAdapter } from "@auth/drizzle-adapter";
+import { PrismaAdapter } from "@auth/prisma-adapter";
 import {
     getServerSession,
     type DefaultSession,
@@ -6,7 +6,7 @@ import {
 } from "next-auth";
 import DiscordProvider from "next-auth/providers/discord";
 
-import db from "@/db";
+import { prisma } from "@/db";
 import Github from "next-auth/providers/github";
 import Google from "next-auth/providers/google";
 
@@ -50,7 +50,7 @@ export const authOptions: NextAuthOptions = {
     // session: {
     //     strategy: "jwt",
     // },
-    adapter: DrizzleAdapter(db),
+    adapter: PrismaAdapter(prisma),
     providers: [
         DiscordProvider({
             clientId: process.env.DISCORD_CLIENT_ID!,

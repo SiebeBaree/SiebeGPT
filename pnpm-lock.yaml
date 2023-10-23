@@ -59,9 +59,6 @@ dependencies:
   openai:
     specifier: ^4.12.4
     version: 4.12.4
-  postgres:
-    specifier: ^3.4.0
-    version: 3.4.0
   prisma:
     specifier: ^5.4.2
     version: 5.4.2
@@ -2969,10 +2966,6 @@ packages:
       nanoid: 3.3.6
       picocolors: 1.0.0
       source-map-js: 1.0.2
-
-  /postgres@3.4.0:
-    resolution: {integrity: sha512-d7UtSoCg4hUtzxM9aRi3J8BrM6t0h4bQmgAHG96cDCNpP9CnnWQRdRl7WWNvKs0oOaQU2InGoOi1jETmdZK02g==}
-    dev: false
 
   /preact-render-to-string@5.2.3(preact@10.11.3):
     resolution: {integrity: sha512-aPDxUn5o3GhWdtJtW0svRC2SS/l8D9MAgo2+AWml+BhDImb27ALf04Q2d+AHqUUOc6RdSXFIBVa2gxzgMKgtZA==}
